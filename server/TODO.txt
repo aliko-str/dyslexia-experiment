@@ -1,0 +1,6 @@
+
+2) control the saving process
+
+3) update the delays (500ms and 5000ms)
+
+5) resize the images

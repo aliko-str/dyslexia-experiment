@@ -1,0 +1,7 @@
+fname	nevals
+nielibrionline.it.png	1
+stilsedie.it.png	4
+www.abshop.it.png	2
+www.adelphi.it.png	2
+www.ancora-libri.it.png	3
+www.angeluccicicli.it.png	4

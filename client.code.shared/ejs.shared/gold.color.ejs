@@ -1,0 +1,42 @@
+<% (function validateInput(data){
+  if(!data.cssColor || !data.possibleColors){
+    console.log("Gold ejs rendering data weren't valid");
+  }
+})(data); %>
+
+<div align="center" class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <br />
+    <h1>Quality control check. <small>Those who give meaningless and random answers do cause much harm to us - we try to prevent it as we can...</small></h1>
+    <br />
+    <hr />
+    <%
+      var squareSize = Math.round($(window).width()/4);
+      var squareSizeMax = squareSize + 24;
+     %>
+    <div class="goldSquareBox" style="padding:10px;border:solid 2px;width:<%= squareSizeMax %>px;height:<%= squareSizeMax %>px;background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAD0lEQVQImWNgQAX/yeAAAIHCA/0RE2WAAAAAAElFTkSuQmCC') repeat scroll 0 0 rgba(0, 0, 0, 0);">
+      <div class="goldSquare" style="border:solid 2px;width:<%= squareSize %>px;height:<%= squareSize %>px;background-color: <%= data.cssColor %>;"></div>
+    </div>
+    <br />
+    <hr />
+    <form action="#" class="form-horizontal" role="form">
+      <p class="form-group">
+        Question: <i>What is the color of the square above?</i>
+      </p>
+      <div class="form-group">
+        <% for(var i = 0; i < data.possibleColors.length; i++) {%>
+        <div class="radio-inline radio-container">
+          <label class="ratingValue">
+            <input type="radio" name="gold" value="<%= i %>" required/>
+            <%= data.possibleColors[i] %></label>
+        </div>
+        <% } %>
+        <br/>
+        <hr />
+      </div>
+      <input type="submit" value="Submit answer" class="btn btn-info btn-lg" />
+    </form>
+  </div>
+  <div class="col-md-2"></div>
+</div>

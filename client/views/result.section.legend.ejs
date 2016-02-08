@@ -1,0 +1,10 @@
+<div>
+	<% for(var i = 0, ilen = data.length; i < ilen; i++) { %>
+		<div style="min-width: 40px;display: inline-block;">
+			<p class="pull-left" style="margin-right:5px; width: 30px;height: 30px; border-radius: 50%;background-color: <%= data[i].color %>"></p>
+			<span>
+				<%= data[i].value %>&#37; - <%= data[i].label %>
+			</span>
+		</div>
+	<% } %>
+</div>

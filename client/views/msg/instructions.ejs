@@ -1,0 +1,42 @@
+<% var s = window.App.S; %>
+<% var psyAsp = window.App.params.psyAsp %>
+<h1 align="left"><img src="/public/img/icons/surprised.png" class="machineFaceIco" alt="Surprised Computer Face" /> <%= s["instrTitle"] %> </h1>
+<p align="left" class="lead">
+	<%= s["instrBody"].interpolate({N: psyAsp.nEvalsPerSession }) %>:
+</p>
+<div class="row">
+	<div class="col-sm-4">
+		<img src="/public/img/redDot.3.png" class="explImg"/>
+	</div>
+	<div class="col-sm-8">
+		<p align="left">
+			<%= s["instr1"] %>
+		</p>
+	</div>
+</div>
+<br />
+<div class="row">
+	<div class="col-sm-4">
+		<img src="/public/img/sample.stimulus.png" class="explImg"/>
+	</div>
+	<div class="col-sm-8">
+		<p align="left">
+			<%= s["instr2"] %>
+		</p>
+	</div>
+</div>
+<br />
+<div class="row">
+	<div class="col-sm-6">
+		<img src="/public/img/stub.scale1-9.png" class="explImg"/>
+	</div>
+	<div class="col-sm-6">
+		<p align="left">
+			<%= s["instr3"] %>
+		</p>
+	</div>
+</div>
+<br />
+<p align="left" class="lead">
+	<%= s["instrBody2"] %>
+</p>

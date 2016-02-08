@@ -1,0 +1,9 @@
+<% var s = window.App.S; %>
+<img class="machineFaceIco" src="/public/img/icons/smile.png" alt="Happy Machine Face" />
+<h1>
+	<span><%= window.App.params.emailed?s['emailedOk']:s['completeTitle'] %>&nbsp;</span>
+	<small id="nextSessionCountdown"></small>
+</h1>
+<p class="lead">
+	<span> <%= s['completeBodyNew']%> </span>
+</p>

@@ -1,0 +1,60 @@
+{
+	"name": "dyslexia.exp",
+	"version": "0.0.1",
+	"description": "A heavy website to gather the ratings of readability for a buch of webpages and book pages",
+	"author": "Aliaksei Miniukovich <a.minyukovich@gmail.com>",
+	"contributors": [
+		{
+			"name": "Aliaksei Miniukovich",
+			"email": "a.minyukovich@gmail.com"
+		}
+	],
+	"bin": {},
+	"scripts": {
+		"start": "node ./server/server.js",
+		"predeploy": "echo im about to deploy",
+		"postdeploy": "echo ive deployed"
+	},
+	"main": "./server/server.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aliko-str/tLightVC.screensaver"
+	},
+	"bugs": {
+		"url": "https://github.com/aliko-str/tLightVC.screensaver/issues"
+	},
+	"keywords": ["iamtoolazytothinkofany"],
+	"dependencies": {
+		"ejs": "2.3.x",
+		"mailgun-js": "0.7.1",
+		"express": "4.13.2",
+		"body-parser": "1.13.1",
+		"winston": "git://github.com/flatiron/winston#master",
+		"errorhandler": "1.4.x",
+		"fast-csv": "0.6.x",
+		"promise": "7.0.x",
+		"archiver": "0.14.x",
+		"fast-csv": "0.6.x",
+		"http-proxy": "1.11.x",
+		"rimraf": "2.4.x",
+		"save-to": "1.0.x",
+		"sprintf": "0.1.x",
+		"sprintf-js": "1.0.x",
+		"winston": "1.0.x",
+		"xml2js": "0.4.x",
+		"q": "1.4.x",
+		"vhost": "3.0.x",
+		"compression": "1.5.x",
+		"underscore": "1.8.x"
+	},
+	"devDependencies": {
+	},
+	"preferGlobal": false,
+	"private": false,
+	"publishConfig": {
+		"registry": "https://your-private-hosted-npm.registry.nodejitsu.com"
+	},
+	"subdomain": "foobar",
+	"analyze": true,
+	"license": "MIT"
+}
